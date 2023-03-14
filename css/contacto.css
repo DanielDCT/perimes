@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    }
+
+/* CARGA */
+
+#contenedor-carga {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 150;
+}
+
+#carga {
+    border: 15px solid rgb(241, 241, 241);
+    border-top-color: rgb(156, 59, 59);
+    border-top-style: double;
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-animation: girar 1.5s linear infinite;
+    -o-animation: girar 1.5s linear infinite;
+    animation: girar 1.5s linear infinite;
+}
+
+@keyframes girar {
+    from {transform: rotate(0deg); }
+    to {transform: rotate(360deg); }
+} 
+
+
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    /* Aquí el origen de la imagen */ 
+
+    background: -webkit-linear-gradient(to right, hsla(0, 0%, 0%, 0.348), hsl(0, 0%, 0%)),url(../img/portadas-principales/portada-contacto.jpg);
+    background: linear-gradient(to right, hsla(0, 0%, 0%, 0.275),  hsla(0, 0%, 0%, 0.664)),url(../img/portadas-principales/portada-contacto.jpg);
+  
+    /* Fijar la imagen de fondo este vertical y
+    horizontalmente y centrado */
+    background-position: center center;
+
+    /* Esta imagen no debe de repetirse */
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+    /* La imagen ocupa el 100% y se reescala */
+    background-size: cover;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor {
+    width: 80%;
+    padding: 20px;
+    }
+
+.contenedor h2 {
+    width: 100%;
+    color: rgb(156, 59, 59);
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+    }
+
+.contenedor .row100 {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    }
+
+.contenedor .row100 .col {
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+    }
+
+.contenedor .row100 .caja-input {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #45f3ff;
+    color: rgb(156, 59, 59);
+    }
+
+.contenedor .row100 .caja-input input,
+.contenedor .row100 .caja-input.textarea textarea {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1; 
+    color: #000;
+    }
+
+.contenedor .row100 .caja-input .texto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+    }
+
+.contenedor .row100 .caja-input input:focus + .texto,
+.contenedor .row100 .caja-input input:valid + .texto {
+    top: -35px;
+    left: -10px;
+    }
+
+.contenedor .row100 .caja-input .linea {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: rgb(156, 59, 59);
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+    }
+
+.contenedor .row100 .caja-input input:focus ~ .linea,
+.contenedor .row100 .caja-input input:valid ~ .linea {
+    height: 100%;
+    }
+
+.contenedor .row100 .caja-input.textarea {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+    }
+
+.contenedor .row100 .caja-input.textarea textarea {
+    height: 100%;
+    resize: none;
+    }
+
+.contenedor .row100 .caja-input textarea:focus + .texto,
+.contenedor .row100 .caja-input textarea:valid + .texto {
+    top: -35px;
+    left: -10px;
+    }
+
+.contenedor .row100 .caja-input textarea:focus ~ .linea,
+.contenedor .row100 .caja-input textarea:valid ~ .linea {
+    height: 100%;
+    }
+
+input[type="submit"] {
+    border: none;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background: rgb(156, 59, 59);
+    color: #000;
+    font-size: 18px;
+    border-radius: 2px;
+    }
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 350px){
+    
+    .contenedor .row100 {
+        width: 89%;
+        }
+    
+    .contenedor .row100 .col {
+        width: 89%;
+        }
+    
+    .contenedor .row100 .caja-input {
+        width: 89%;
+        }
+            
+    .contenedor .row100 .caja-input input,
+    .contenedor .row100 .caja-input.textarea textarea {
+        width: 89%;
+        }
+
+    .contenedor .row100 .caja-input.textarea {
+        width: 89%;
+        }
+}

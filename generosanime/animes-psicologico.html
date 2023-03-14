@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/icono.png">
+    <link rel=StyleSheet href="../css/animes.css" type="text/css" media=screen>   
+    <script src="../js/funciones.js" language="javascript" type="text/javascript"></script> 
+    <title>Anime Psicologico</title>
+</head>
+<body>
+    <main>
+
+    <div id="contenedor-carga">
+        <div id="carga"></div>
+    </div>
+
+    <!------------- SECCION PORTADA ------------->
+
+    <section id="portada">
+        <div id="titulo"><h1>ANIME PSICOLOGICO
+            <div class="contenedor-logo">
+                <input class="logo" type="image" src="../img/logo_white_large.png">
+            </div>
+
+                <div id="navbar"><a href="../series.html"     style="border-right: 3px solid rgb(255, 255, 255);">SERIES </a> 
+                                <a href="../peliculas.html" style="border-right: 3px solid rgb(255, 255, 255);">PELICULAS </a> 
+                                <a class="active" href="../animes.html">ANIME</a>
+                                </div>
+            </h1>
+        </div>
+    </section>
+
+    <div class="barrabusqueda">  
+        <div class="generos">
+            <div class="select">
+                <button onclick="myFunction()" class="selectbtn">Generos</button>
+                  <div id="myselect" class="select-contenido">
+                    <a href="animes-accion.html">Accion</a>
+                    <a href="animes-aventura.html">Aventura</a>
+                    <a href="animes-cienciaficcion.html">Ciencia ficcion</a>
+                    <a href="animes-colegial.html">Colegial</a>
+                    <a href="animes-comedia.html">Comedia</a>
+                    <a href="animes-demonios.html">Demonios</a>
+                    <a href="animes-deportes.html">Deportes</a>
+                    <a href="animes-drama.html">Drama</a>
+                    <a href="animes-ecchi.html">Ecchi</a>
+                    <a href="animes-fantasia.html">Fantasia</a>
+                    <a href="animes-gore.html">Gore</a>
+                    <a href="animes-harem.html">Harem</a>
+                    <a href="animes-horror.html">Horror</a>
+                    <a href="animes-mecha.html">Mecha</a>
+                    <a href="animes-magia.html">Magia</a>
+                    <a href="animes-misterio.html">Misterio</a>
+                    <a href="animes-psicologico.html">Psicologico</a>
+                    <a href="animes-reencuentros.html">Rencuentros de la vida</a>
+                    <a href="animes-romance.html">Romance</a>
+                    <a href="animes-seinen.html">Seinen</a>
+                    <a href="animes-shoujo.html">Shoujo</a>
+                    <a href="animes-shounen.html">Shounen</a>
+                    <a href="animes-sobrenatural.html">Sobrenatural</a>
+                    <a href="animes-suspenso.html">Suspenso</a>
+                    <a href="animes-terror.html">Terror</a>
+                    <a href="animes-tragedia.html">Tragedia</a>
+                    <a href="animes-yaoi.html">Yaoi</a>
+                    <a href="animes-yuri.html">Yuri</a>
+                  </div>
+                </div>
+            
+            <!-- Boton inicio -->
+            <a href="#portada" class="btn-inicio">Inicio</a>
+
+        </div>
+
+        <div class="buscador">
+            <input id="buscar" onkeyup="search_animes()" type="text" placeholder="Buscar">
+        </div> 
+    </div>
+    
+    <!------------ SECCION CONTENIDOS ------------>
+    <!------------ CONTENIDO DE PELICULAS ------------->
+
+    <section id="contenidos">
+        <h3 class="contenido-animes"><a href="../animes.html">ANIME</a></h3>
+        <div class="contenedor">
+
+        <!-- K -->
+
+        <div class="carta-animes">
+            <a href="../animes/k/kakegurui1.html"><div class="imgBx">
+                <img src="../img/caratulas/animes/kakegurui1.jpg"></a>
+                <div class="content">
+                    <a href="../animes/k/kakegurui1.html"><h2>Kakegurui 1nd</h2></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="carta-animes">
+            <a href="../animes/k/kakegurui2.html"><div class="imgBx">
+                <img src="../img/caratulas/animes/kakegurui2.jpg"></a>
+                <div class="content">
+                    <a href="../animes/k/kakegurui2.html"><h2>Kakegurui 2nd</h2></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Z -->
+
+        <div class="carta-animes">
+            <a href="../animes/z/zetuen-no-tempest.html"><div class="imgBx">
+                <img src="../img/caratulas/animes/zetsuen-no-tempest.jpg">
+                <div class="content">
+                    <a href="../animes/z/zetuen-no-tempest.html"><h2>Zetsuen No Tempest</h2></a>
+                </div>
+            </div>
+        </div>  
+        </div>
+    </section>
+
+    <!------------ SECCION FOOTER ------------>  
+    <footer>
+        <div class="contenedor-footer">
+            <a href="https://www.facebook.com/profile.php?id=100061123026138" target="_blank">Facebook</a>
+            <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+            <a href="https://www.instagram.com/daniel.callderon_/" target="_blank">Instagram</a>
+            <a href="contacto.html" target="_blank">Contacto</a>
+        </div>
+
+        <div class="contenedor-footer-logo">
+            <input class="logo-footer" type="image" src="../img/logo_white_large.png">
+        </div>
+    
+        <div class="contenedor-titulo-final">
+            <h2 class="titulo-final">© Daniel Calderon</h2>
+        </div>
+    </footer>
+
+    </main>
+</body>
+</html>
